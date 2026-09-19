@@ -146,6 +146,7 @@ ellipse(500,0,200,50);
 
 void mousePressed()
 {
+background(bg);
 startX= (int)(Math.random()*600);
 startY= 0;
 endX= 0;
@@ -153,7 +154,7 @@ endY= 150;
 w=0;
 e=0;
 q=0;
-background(bg);
+
 }
 
 
