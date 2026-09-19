@@ -31,10 +31,7 @@ else{
 }
 
 while(endX <=600){
- if (bg.width > 0 && bg.height > 0) {
-    bg.resize(600,600);
- background(bg);
-}
+ 
 if(Math.random() < .5){
   endX = startX + (int)(Math.random() * 40);
 }
@@ -56,6 +53,10 @@ if (endX >= 280 && endX <= 320 && endY >=430 && endY <=490){
  
 startX= endX;
 startY= endY;
+if (bg.width > 0 && bg.height > 0) {
+    bg.resize(600,600);
+ background(bg);
+}
 }
 
 
