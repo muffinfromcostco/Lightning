@@ -18,9 +18,11 @@ lightningTime = millis();
 
 void draw()
 {
+if (!newLightning && millis() - lightningTime >= 1000){
 if (bg.width > 0 && bg.height > 0) {
     bg.resize(600,600);
  background(bg);
+}
 }
 stroke(#E8D5F2);
 
@@ -31,7 +33,7 @@ else{
   g = 60;
 }
 
-if (!newLightning && millis() - lightningTime >= 1000){
+
 while(endX <=600){
  
 if(Math.random() < .5){
@@ -55,8 +57,6 @@ if (endX >= 280 && endX <= 320 && endY >=430 && endY <=490){
  
 startX= endX;
 startY= endY;
-
-}
 }
 
   noFill();
