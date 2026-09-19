@@ -8,7 +8,7 @@ int w=0;
 int e=0;
 int q=0;
 PImage bg;
-
+boolean newLightning = true;
   void setup()
 {
   size(600,600);
@@ -33,7 +33,8 @@ else{
   g = 60;
 }
 
-
+if (newLightning)
+{
 while(endX <=600){
 if(Math.random() < .5){
   endX = startX + (int)(Math.random() * 40);
@@ -57,7 +58,7 @@ if (endX >= 280 && endX <= 320 && endY >=430 && endY <=490){
 startX= endX;
 startY= endY;
 }
-
+}
   noFill();
 stroke(0,0,0);
 arc(300,500,600,50,0,PI);
@@ -146,7 +147,6 @@ ellipse(500,0,200,50);
 
 void mousePressed()
 {
-background(bg);
 startX= (int)(Math.random()*600);
 startY= 0;
 endX= 0;
@@ -154,7 +154,9 @@ endY= 150;
 w=0;
 e=0;
 q=0;
+background(bg);
 
+newLightning = true;
 }
 
 
