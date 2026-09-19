@@ -8,7 +8,6 @@ int w=0;
 int e=0;
 int q=0;
 PImage bg;
-lightningTime = millis();
   void setup()
 {
   size(600,600);
@@ -18,11 +17,9 @@ lightningTime = millis();
 
 void draw()
 {
-if (!newLightning && millis() - lightningTime >= 1000){
 if (bg.width > 0 && bg.height > 0) {
     bg.resize(600,600);
  background(bg);
-}
 }
 stroke(#E8D5F2);
 
@@ -156,7 +153,6 @@ endY= 150;
 w=0;
 e=0;
 q=0;
- lightningTime = millis();
 background(bg);
 
 
