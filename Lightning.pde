@@ -18,10 +18,7 @@ boolean newLightning = true;
 
 void draw()
 {
- if (bg.width > 0 && bg.height > 0) {
-    bg.resize(600,600);
 
-  }
 
 stroke(#E8D5F2);
 
@@ -36,6 +33,10 @@ else{
 if (newLightning)
 {
 while(endY <=600){
+ if (bg.width > 0 && bg.height > 0) {
+    bg.resize(600,600);
+ background(bg);
+}
 if(Math.random() < .5){
   endX = startX + (int)(Math.random() * 40);
 }
@@ -145,7 +146,7 @@ ellipse(300,20,300,100);
 ellipse(240,20,200,150);
 ellipse(500,0,200,50);
 
-    background(bg);
+   
 }
 
 void mousePressed()
