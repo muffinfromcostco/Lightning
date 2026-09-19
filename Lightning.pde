@@ -8,7 +8,7 @@ int w=0;
 int e=0;
 int q=0;
 PImage bg;
-
+lightningTime = millis();
   void setup()
 {
   size(600,600);
@@ -31,6 +31,7 @@ else{
   g = 60;
 }
 
+if (!newLightning && millis() - lightningTime >= 1000){
 while(endX <=600){
  
 if(Math.random() < .5){
@@ -56,7 +57,7 @@ startX= endX;
 startY= endY;
 
 }
-
+}
 
   noFill();
 stroke(0,0,0);
@@ -155,6 +156,7 @@ endY= 150;
 w=0;
 e=0;
 q=0;
+ lightningTime = millis();
 background(bg);
 
 
