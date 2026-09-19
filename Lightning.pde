@@ -18,10 +18,11 @@ PImage bg;
 
 void draw()
 {
-
-
+if (bg.width > 0 && bg.height > 0) {
+    bg.resize(600,600);
+ background(bg);
+}
 stroke(#E8D5F2);
-
 
 if (Math.random() <= .5){
 g = -60;
@@ -53,10 +54,7 @@ if (endX >= 280 && endX <= 320 && endY >=430 && endY <=490){
  
 startX= endX;
 startY= endY;
-if (bg.width > 0 && bg.height > 0) {
-    bg.resize(600,600);
- background(bg);
-}
+
 }
 
 
