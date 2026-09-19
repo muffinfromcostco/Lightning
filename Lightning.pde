@@ -58,6 +58,7 @@ if (endX >= 280 && endX <= 320 && endY >=430 && endY <=490){
 startX= endX;
 startY= endY;
 }
+  newLightning = false;
 }
   noFill();
 stroke(0,0,0);
