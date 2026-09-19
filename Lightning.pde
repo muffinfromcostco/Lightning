@@ -155,7 +155,6 @@ endY= 150;
 w=0;
 e=0;
 q=0;
-background(bg);
 
 newLightning = true;
 }
