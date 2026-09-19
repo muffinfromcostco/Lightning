@@ -8,16 +8,21 @@ int w=0;
 int e=0;
 int q=0;
 PImage bg;
-void setup()
+
+  void setup()
 {
   size(600,600);
   strokeWeight(7);
- bg= loadImage("a-lightning-bolt-is-seen-in-the-sky-above-a-storm-photo.jpg");
- bg.resize(600,600);
-   background(bg);
+  bg = loadImage("a-lightning-bolt-is-seen-in-the-sky-above-a-storm-photo.jpg");
+}
 }
 void draw()
 {
+ if (bg.width > 0 && bg.height > 0) {
+    bg.resize(600,600);
+    background(bg);
+  }
+
 stroke(#E8D5F2);
 
 
