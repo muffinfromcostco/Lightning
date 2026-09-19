@@ -1,4 +1,5 @@
 # Hit the bird with lightning!
+ Hit the bird with lightning!
 int startX=300;
 int startY= 0;
 int endX= 0;
