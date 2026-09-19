@@ -8,7 +8,7 @@ int w=0;
 int e=0;
 int q=0;
 PImage bg;
-boolean newLightning = true;
+
   void setup()
 {
   size(600,600);
@@ -30,8 +30,6 @@ else{
   g = 60;
 }
 
-if (newLightning)
-{
 while(endY <=600){
  if (bg.width > 0 && bg.height > 0) {
     bg.resize(600,600);
@@ -59,8 +57,8 @@ if (endX >= 280 && endX <= 320 && endY >=430 && endY <=490){
 startX= endX;
 startY= endY;
 }
-  newLightning = false;
-}
+
+
   noFill();
 stroke(0,0,0);
 arc(300,500,600,50,0,PI);
@@ -160,7 +158,7 @@ e=0;
 q=0;
 background(bg);
 
-newLightning = true;
+
 }
 
 
