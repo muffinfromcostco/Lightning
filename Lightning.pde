@@ -15,7 +15,7 @@ PImage bg;
   strokeWeight(7);
   bg = loadImage("a-lightning-bolt-is-seen-in-the-sky-above-a-storm-photo.jpg");
 }
-}
+
 void draw()
 {
  if (bg.width > 0 && bg.height > 0) {
