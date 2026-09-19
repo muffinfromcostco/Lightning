@@ -34,7 +34,7 @@ else{
 }
 
 
-
+while(endX <=600){
 if(Math.random() < .5){
   endX = startX + (int)(Math.random() * 40);
 }
@@ -56,7 +56,7 @@ if (endX >= 280 && endX <= 320 && endY >=430 && endY <=490){
  
 startX= endX;
 startY= endY;
-
+}
 
   noFill();
 stroke(0,0,0);
