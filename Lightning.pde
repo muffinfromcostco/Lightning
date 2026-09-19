@@ -30,7 +30,7 @@ else{
   g = 60;
 }
 
-while(endY <=600){
+while(endX <=600){
  if (bg.width > 0 && bg.height > 0) {
     bg.resize(600,600);
  background(bg);
